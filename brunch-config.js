@@ -1,9 +1,4 @@
 // See http://brunch.io for documentation.
-exports.paths = {
-  public: 'public',
-  watched: ['app', 'vender']
-};
-
 exports.files = {
   javascripts: {
     joinTo: {
@@ -15,13 +10,22 @@ exports.files = {
 };
 
 exports.plugins = {
-  babel: {presets: ['latest']}
+  babel: {presets: ['latest']},
+  sass: {
+    options: {
+      includePaths: ['node_modules/foundation-sites/scss']
+    }
+  }
 };
 
 exports.npm = {
   globals: {
     $: 'jquery',
     jQuery: 'jquery',
-    motionui: 'motion-ui'
+    motionui: 'motion-ui',
+    Foundation: 'foundation-sites'
+  },
+  styles: {
+    Foundation: ['scss/settings','scss/foundation.scss']
   }
 };

@@ -1,0 +1,25 @@
+$white: #FCFCFC;
+$black: #000000;
+$dark-gray: #222222;
+$medium-gray: #666666;
+$light-gray: #0077cc;
+$light-blue: #0077cc;
+$medium-blue: #0066cc;
+$dark-blue: #0055cc;
+
+.contact-information {
+  background-color: $white;
+  color: $medium-blue;
+  & p {
+    color: $light-gray;
+  }
+  & span {
+    color: $light-gray;
+  }
+  & a {
+    color: $medium-blue;
+  }
+  & a:hover {
+    color: $dark-blue;
+  }
+}

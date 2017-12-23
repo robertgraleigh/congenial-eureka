@@ -12,7 +12,8 @@
   "dependencies": {
     "foundation-sites": "^6.4.4-rc1",
     "jquery": "^3.2.1",
-    "motion-ui": "^1.2.3"
+    "motion-ui": "^1.2.3",
+    "sass-brunch": "^2.10.4"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
