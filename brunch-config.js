@@ -1,4 +1,9 @@
 // See http://brunch.io for documentation.
+exports.paths = {
+  public: 'public',
+  watched: ['app', 'vender']
+};
+
 exports.files = {
   javascripts: {
     joinTo: {
@@ -11,4 +16,12 @@ exports.files = {
 
 exports.plugins = {
   babel: {presets: ['latest']}
+};
+
+exports.npm = {
+  globals: {
+    $: 'jquery',
+    jQuery: 'jquery',
+    motionui: 'motion-ui'
+  }
 };
